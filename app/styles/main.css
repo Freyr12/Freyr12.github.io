@@ -1,0 +1,141 @@
+.Player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5em;
+	height: 5em;
+	background-image: url('/images/dabs.png');
+	background-size: cover;
+}
+
+.Scoreboard {
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 10em;
+	height: 30em;
+	width: 40em;
+	margin-left: -20em;
+	box-sizing: border-box;
+	background: purple;
+	text-align: center;
+	-webkit-transform: translateZ(0) translate(0, -40em);
+	-webkit-transition: -webkit-transform 0.5s;
+}
+
+/**
+* Reset transform to animate it into the correct spot on the screen.
+*/
+.Scoreboard.is-visible {
+	-webkit-transform: none;
+}
+
+.Scoreboard-restart {
+	margin-top: 20em;
+	font-size: inherit;
+	padding: 0.4em 1.5em;
+	border: 0.2em solid white;
+	background: none;
+	cursor: pointer;
+}
+.Scoreboard-restartText {
+	font-family: 'Comic Sans MS', serif;
+	font-size: 2.4em;
+	color: white;
+	}
+	body {
+	background: black;
+}
+.browsehappy {
+	margin: 0.2em 0;
+	/*background: ?#?ccc?;*/
+	color: #000;
+	padding: 0.2em 0;
+}
+.GameCanvas {
+	font-size: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 102.4em;
+	height: 57.6em;
+	margin-left: -51.2em;
+	margin-top: -28.8em;
+	overflow: hidden;
+	background: red;
+	background-image: url('/images/bg.png');
+	background-size: cover;
+}
+.score {
+  position: absolute;
+  font-size: 3em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #fff;
+  z-index: 4;
+}
+.Ground {
+	position: absolute;
+	width: 204.8em;
+	height: 7.6em;
+	margin-top: 50em;
+	background-image: url('/images/ground.png');
+	background-repeat: repeat-x;
+}
+
+.Pipe {
+	position: absolute;
+	width: 10em;
+	height: 14em;
+}
+
+.Toppipe {
+	width: 10em;
+	height: 14em;
+	background: url('/images/toppipe.png') bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+
+.Bottompipe {
+	margin-top: 30em;
+	width: 10em;
+	height: 14em;
+	background-image: url('/images/pipe.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.Wing {
+	position: absolute;
+	width: 3.4em;
+	height: 3em;
+	background-image: url('/images/Wing.png');
+	background-size: cover;
+}
+
+.Spaceship {
+	position: absolute;
+	width: 5em;
+	height: 2em;
+	background-image: url('/images/spaceship.png');
+	background-size: cover;
+}
+
+.highscore {
+	position: absolute;
+  	font-size: 6em;
+  	width: 100%;
+  	display: block;
+  	text-align: center;
+  	color: #fff;
+  	z-index: 4;
+}
